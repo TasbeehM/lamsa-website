@@ -21,23 +21,35 @@
     line-height: 1.9;
 }
 
+/* =========================
+   HOME HERO
+========================= */
+
 .home-hero {
     min-height: 600px;
     display: flex;
     align-items: center;
     padding: 80px 10%;
-    background:
-        linear-gradient(90deg,
-            rgba(255,244,241,.85) 0%,
-            rgba(255,244,241,.55) 35%,
-            rgba(255,244,241,.10) 65%,
-            rgba(255,244,241,0) 100%
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(255, 244, 241, 0.85) 0%,
+            rgba(255, 244, 241, 0.55) 35%,
+            rgba(255, 244, 241, 0.10) 65%,
+            rgba(255, 244, 241, 0) 100%
         ),
-        url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1600") center/cover;
+        url("/images/back.png");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-content {
     max-width: 650px;
+    position: relative;
+    z-index: 1;
 }
 
 .section-label {
@@ -93,6 +105,10 @@
     color: white;
 }
 
+/* =========================
+   MEET THE ARTIST
+========================= */
+
 .meet-artist {
     padding: 100px 10%;
     display: grid;
@@ -123,6 +139,10 @@
     padding-bottom: 5px;
     margin-top: 15px;
 }
+
+/* =========================
+   COLLECTIONS
+========================= */
 
 .collections-section {
     padding: 90px 7%;
@@ -181,6 +201,10 @@
     font-size: 14px;
 }
 
+/* =========================
+   CREATE TOGETHER
+========================= */
+
 .create-section {
     padding: 100px 20px;
     text-align: center;
@@ -196,6 +220,10 @@
     margin-bottom: 30px;
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 900px) {
     .meet-artist {
         grid-template-columns: 1fr;
@@ -207,10 +235,68 @@
     }
 }
 
+/* =========================
+   MOBILE HOME HERO
+========================= */
+
 @media (max-width: 550px) {
+
     .home-hero {
-        min-height: 500px;
-        padding: 60px 7%;
+        min-height: 620px;
+        padding: 65px 7%;
+
+        background-image:
+            linear-gradient(
+                90deg,
+                rgba(255, 244, 241, 0.96) 0%,
+                rgba(255, 244, 241, 0.88) 40%,
+                rgba(255, 244, 241, 0.65) 75%,
+                rgba(255, 244, 241, 0.40) 100%
+            ),
+            url("/images/back.png");
+
+        background-position: 68% center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(32px, 8vw, 40px);
+        line-height: 1.2;
+        margin: 20px 0;
+    }
+
+    .hero-content p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* Buttons Under Each Other */
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-outline {
+        width: fit-content;
+        text-align: center;
+        padding: 13px 22px;
+        font-size: 12px;
+    }
+
+    .section-label {
+        font-size: 10px;
+        letter-spacing: 2px;
     }
 
     .artist-image img {
@@ -232,7 +318,10 @@
     }
 }
 
-/* Creative Process Section */
+/* =========================
+   CREATIVE PROCESS
+========================= */
+
 .process-section {
     padding: 90px 7%;
     background-color: #FFF4F1;
@@ -317,7 +406,10 @@
     color: #817064;
 }
 
-/* Creative Process Responsive */
+/* =========================
+   CREATIVE PROCESS RESPONSIVE
+========================= */
+
 @media (max-width: 900px) {
     .process-section {
         padding: 75px 5%;

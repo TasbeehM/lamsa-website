@@ -526,14 +526,15 @@ nav.navbar .search-clear {
         flex: 0 0 100%;
         width: 100%;
         min-width: 0;
+        box-sizing: border-box;
 
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
 
-        gap: 0;
-        padding: 12px 0 3px;
+        gap: 16px;
+        padding: 12px 14px 3px;
         margin-top: 10px;
         border-top: 1px solid #E8D7C3;
     }
