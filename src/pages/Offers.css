@@ -1,0 +1,244 @@
+
+.offers-page {
+    background: #FFF4F1;
+    color: #49392F;
+    padding-bottom: 80px;
+}
+
+/* Hero */
+.offers-hero {
+    background: #F9DFDC;
+    text-align: center;
+    padding: 85px 20px 75px;
+}
+
+.offers-eyebrow {
+    color: #A66D70;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.offers-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    font-weight: 400;
+    margin: 18px 0;
+}
+
+.offers-hero p {
+    max-width: 620px;
+    margin: auto;
+    color: #817064;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* Offers Section */
+.offers-section {
+    max-width: 1200px;
+    margin: 65px auto;
+    padding: 0 30px;
+}
+
+.offers-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.offers-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: 400;
+    margin: 13px 0;
+}
+
+.offers-heading p {
+    color: #817064;
+    font-size: 14px;
+}
+
+/* Offers Cards */
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.offer-card {
+    background: #FFFAF8;
+    border: 1px solid #F0DFDA;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(73, 57, 47, 0.08);
+}
+
+.offer-image {
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.offer-card:hover .offer-image img {
+    transform: scale(1.04);
+}
+
+.offer-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #FFF4F1;
+    color: #A66D70;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-size: 9px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.offer-info {
+    padding: 25px 22px;
+}
+
+.offer-info h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0 0 13px;
+}
+
+.offer-description {
+    color: #817064;
+    font-size: 13px;
+    line-height: 1.8;
+    min-height: 92px;
+    margin-bottom: 15px;
+}
+
+.offer-items {
+    color: #A66D70;
+    font-size: 11px;
+    border-top: 1px solid #EAD8D2;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.offer-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 13px 16px;
+    background: #5A3B3D;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.offer-btn:hover {
+    background: #806064;
+    color: white;
+}
+
+.offer-btn span,
+.custom-offer-btn span {
+    font-size: 17px;
+}
+
+/* Custom Offer Banner */
+.custom-offer-banner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 55px 25px;
+    background: #F9DFDC;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.custom-offer-banner h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.custom-offer-banner p {
+    color: #817064;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.custom-offer-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    background: #5A3B3D;
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.custom-offer-btn:hover {
+    background: #806064;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .offers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .custom-offer-banner {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .offers-hero {
+        padding: 60px 20px;
+    }
+
+    .offers-hero h1 {
+        font-size: 34px;
+    }
+
+    .offers-section {
+        padding: 0 18px;
+        margin: 45px auto;
+    }
+
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .offer-description {
+        min-height: auto;
+    }
+
+    .offer-image {
+        height: 240px;
+    }
+
+    .custom-offer-banner h2 {
+        font-size: 26px;
+    }
+}

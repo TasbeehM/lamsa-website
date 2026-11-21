@@ -1,0 +1,379 @@
+
+.contact-page {
+    background: #FFF4F1;
+    color: #49392F;
+    padding-bottom: 80px;
+}
+
+/* Intro */
+.contact-hero {
+    text-align: center;
+    padding: 85px 20px 75px;
+    max-width: 100%;
+    margin: auto;
+    background-color: #F9DFDC;
+}
+
+.contact-eyebrow,
+.contact-section-label {
+    color: #A66D70;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.contact-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    font-weight: 400;
+    margin: 18px 0;
+    line-height: 1.2;
+}
+
+.contact-hero p {
+    color: #817064;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 620px;
+    margin: auto;
+}
+
+/* Main Layout */
+.contact-content {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 55px;
+    align-items: start;
+}
+
+/* Left Side */
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 15px;
+
+    position: sticky;
+    top: 100px;
+    align-self: start;
+}
+
+.how-it-works h2,
+.form-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 12px 0 30px;
+}
+
+.process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.step-number {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border: 1px solid #CDA5A1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A66D70;
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+.process-step h3 {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 3px 0 8px;
+}
+
+.process-step p {
+    color: #817064;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* WhatsApp Box */
+.whatsapp-box {
+    background: #F9DFDC;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.whatsapp-icon {
+    font-size: 28px;
+    color: #25D366;
+    margin-bottom: 12px;
+}
+
+.whatsapp-box h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.whatsapp-box p {
+    color: #817064;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.whatsapp-contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: #168C45;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.whatsapp-contact-btn:hover {
+       background: #116B35;
+    color: white;
+}
+
+/* Form Card */
+.contact-form-card {
+    background: #FFFAF8;
+    padding: 38px;
+    border: 1px solid #F0DFDA;
+    border-radius: 12px;
+}
+
+.form-heading {
+    margin-bottom: 30px;
+}
+
+.form-heading h2 {
+    margin-bottom: 0;
+}
+
+.form-section {
+    border-top: 1px solid #EAD8D2;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+.form-section-title {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0 0 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 9px;
+    color: #49392F;
+}
+
+.form-group label span:not(.optional) {
+    color: #B76D70;
+    margin-left: 3px;
+}
+
+.form-group label .optional {
+    color: #A08E83;
+    font-size: 11px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #E5D4CE;
+    border-radius: 5px;
+    background: #FFFEFD;
+    color: #49392F;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #A66D70;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #B5A59B;
+}
+
+.form-group textarea {
+    resize: vertical;
+    line-height: 1.7;
+}
+
+.form-group small {
+    color: #A08E83;
+    font-size: 11px;
+    margin-top: 7px;
+}
+
+/* Upload */
+.upload-area {
+    position: relative;
+    border: 1px dashed #CDA5A1;
+    border-radius: 7px;
+    background: #FFF7F4;
+    padding: 25px 15px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.upload-area:hover {
+    border-color: #A66D70;
+    background: #FFF1ED;
+}
+
+.upload-area input[type="file"] {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    pointer-events: none;
+}
+
+.upload-symbol {
+    font-size: 27px;
+    color: #A66D70;
+}
+
+.upload-text strong {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.upload-text small {
+    color: #A08E83;
+    font-size: 11px;
+}
+
+/* Payment Note */
+.payment-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #F9EFEB;
+    padding: 16px;
+    border-radius: 6px;
+    margin-top: 28px;
+}
+
+.payment-note span {
+    color: #A66D70;
+    font-size: 20px;
+}
+
+.payment-note p {
+    color: #817064;
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Submit Button */
+.submit-request-btn {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    background: #5A3B3D;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.submit-request-btn:hover {
+    background: #806064;
+}
+.form-required-note {
+    color: #A08E83;
+    font-size: 11px;
+    text-align: center;
+    margin: 14px 0 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        max-width: 700px;
+    }
+
+    .contact-left {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-hero {
+        padding: 55px 20px 45px;
+    }
+
+    .contact-hero h1 {
+        font-size: 34px;
+    }
+
+    .contact-content {
+        padding: 0 16px;
+    }
+
+    .contact-form-card {
+        padding: 23px 18px;
+    }
+
+    .whatsapp-box {
+        padding: 24px;
+    }
+}
