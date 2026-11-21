@@ -84,6 +84,7 @@ function Navbar() {
 
     return (
         <nav className="navbar">
+
             {/* Logo */}
             <Link to="/" className="navbar-logo">
                 <div className="logo-circle">L</div>
@@ -103,10 +104,11 @@ function Navbar() {
                 <NavLink to="/contact">CONTACT</NavLink>
             </div>
 
-            {/* Search */}
+            {/* Search and WhatsApp */}
             <div className="navbar-right">
+
                 <div
-                    className="navbar-search-wrapper"
+                    className={`navbar-search-wrapper ${searchOpen ? "mobile-search-open" : ""}`}
                     onBlur={(event) => {
                         if (!event.currentTarget.contains(event.relatedTarget)) {
                             setSearchOpen(false);
@@ -116,6 +118,7 @@ function Navbar() {
                     <form
                         className={`navbar-search ${searchOpen ? "search-active" : ""}`}
                         onSubmit={handleSearchSubmit}
+                        onClick={() => setSearchOpen(true)}
                     >
                         <svg
                             viewBox="0 0 24 24"
@@ -158,6 +161,7 @@ function Navbar() {
 
                     {searchOpen && (
                         <div className="search-dropdown">
+
                             {!normalizedTerm ? (
                                 <>
                                     <p className="search-dropdown-title">
@@ -176,6 +180,7 @@ function Navbar() {
                                                     <strong>{category.label}</strong>
                                                     <small>{category.arabic}</small>
                                                 </span>
+
                                                 <span className="search-arrow">→</span>
                                             </button>
                                         ))}
@@ -205,6 +210,7 @@ function Navbar() {
                                                             <strong>{product.name}</strong>
                                                             <small>{category?.label}</small>
                                                         </span>
+
                                                         <span className="search-arrow">→</span>
                                                     </button>
                                                 );
@@ -226,10 +232,12 @@ function Navbar() {
                                     </button>
                                 </>
                             )}
+
                         </div>
                     )}
                 </div>
 
+                {/* WhatsApp */}
                 <a
                     href="https://wa.me/201000000000"
                     target="_blank"
@@ -249,6 +257,7 @@ function Navbar() {
                         <path d="M8.8 8.2c.3-.5.6-.5.9-.5h.4c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .7.5.8 1.2 1.4 2 1.8.2.1.4.1.6-.1l.7-.8c.2-.2.4-.3.7-.2l1.6.8c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.5-.5.4-1.1.6-1.8.4-1.1-.3-2.4-.9-3.7-2.1-1.1-1-2-2.3-2.2-3.3-.2-.7 0-1.5.5-2Z" />
                     </svg>
                 </a>
+
             </div>
         </nav>
     );

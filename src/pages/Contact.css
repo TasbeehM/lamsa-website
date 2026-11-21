@@ -148,7 +148,7 @@
 }
 
 .whatsapp-contact-btn:hover {
-       background: #116B35;
+    background: #116B35;
     color: white;
 }
 
@@ -336,6 +336,7 @@
 .submit-request-btn:hover {
     background: #806064;
 }
+
 .form-required-note {
     color: #A08E83;
     font-size: 11px;
@@ -353,6 +354,9 @@
 
     .contact-left {
         padding-top: 0;
+        position: static;
+        top: auto;
+        align-self: auto;
     }
 }
 
@@ -375,5 +379,11 @@
 
     .whatsapp-box {
         padding: 24px;
+    }
+
+    .contact-left {
+        position: static;
+        top: auto;
+        align-self: auto;
     }
 }
